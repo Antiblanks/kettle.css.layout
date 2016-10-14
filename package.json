@@ -1,0 +1,23 @@
+{
+  "name": "kettle",
+  "version": "1.0.0",
+  "description": "Kettle Flex based CSS layout",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mark.kneale@antiblanks.com",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}

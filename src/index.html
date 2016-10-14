@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kettle</title>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="kt-container">
+      <div class="kt-grid">
+        <div class="kt-grid__col">
+          <h2>Basic Grid</h2>
+          ${require('./components/basic-grid.html')}
+        </div>
+      </div>
+      <div class="kt-grid">
+        <div class="kt-grid__col">
+          <h2>Individual Sizes</h2>
+          ${require('./components/individual-sizes.html')}
+        </div>
+      </div>
+      <div class="kt-grid">
+        <div class="kt-grid__col">
+          <h2>Nested Grids</h2>
+          ${require('./components/nested-grids.html')}
+        </div>
+      </div>
+      <div class="kt-grid">
+        <div class="kt-grid__col">
+          <h2>Grid Alignment</h2>
+          ${require('./components/grid-alignment.html')}
+        </div>
+      </div>
+      <div class="kt-grid">
+        <div class="kt-grid__col">
+          <h2>Cell Alignment</h2>
+          ${require('./components/cell-alignment.html')}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

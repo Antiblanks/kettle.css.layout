@@ -1,0 +1,13 @@
+.#{$prefix}-container {
+  padding-right: ($gutter/2);
+  padding-left: ($gutter/2);
+  margin: 0 auto;
+
+  @each $key, $value in $breakpoints {
+    @if map-has-key($containers, $key) {
+      @media (min-width: #{$value}) {
+        width: #{map-get($containers, $key)}
+      }
+    }
+  }
+}

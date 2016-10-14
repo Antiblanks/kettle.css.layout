@@ -1,0 +1,33 @@
+
+$prefix: 'kt' !default; // kettle prefix
+
+$gutter: 30px !default;
+
+$breakpoints: (
+  'small': '768px',
+  'medium': '992px',
+  'large': '1200px'
+) !default;
+
+$containers: (
+  'small': (720px + $gutter),
+  'medium': (940px + $gutter),
+  'large': (1140px + $gutter)
+) !default;
+
+$sizes: (
+  'full': '100%',
+  'half': '50%',
+
+  '1of3': '33.3333%',
+  '2of3': '66.6666%',
+
+  '1of4': '25%',
+  '2of4': '50%',
+  '3of4': '75%',
+
+  '1of5': '20%',
+  '2of5': '40%',
+  '3of5': '60%',
+  '4of5': '80%'
+) !default;

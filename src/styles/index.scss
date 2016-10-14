@@ -1,0 +1,14 @@
+
+@import 'common/common.all';
+@import 'layout/layout.all';
+
+.kt-grid--demo {
+
+}
+
+.kt-grid--demo > .kt-grid__col {
+  background: hsla(31,15%,50%,.1);
+  padding: 20px;
+  text-align: center;
+  border: 15px solid #FFF;
+}

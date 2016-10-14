@@ -1,0 +1,63 @@
+
+.#{$prefix}-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: -($gutter/2);
+  margin-left: -($gutter/2);
+}
+
+.#{$prefix}-grid__col {
+  padding: 0 ($gutter/2);
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    .#{$prefix}-grid {
+      flex-direction: row;
+
+      &--top {
+        align-items: flex-start;
+      }
+
+      &--bottom {
+        align-items: flex-end;
+      }
+
+      &--center {
+        align-items: center;
+      }
+
+      &--justify {
+        justify-content: center;
+      }
+
+      &--justify-right {
+        justify-content: flex-end;
+      }
+    }
+
+    .#{$prefix}-grid__col {
+      flex: 1;
+
+      @each $key, $value in $sizes {
+        &--#{$key} {
+          flex: 0 0 #{$value};
+          max-width: #{$value};
+        }
+      }
+
+      &--top {
+        align-self: flex-start;
+      }
+
+      &--bottom {
+        align-self: flex-end;
+      }
+
+      &--center {
+        align-self: center;
+      }
+    }
+  }
+}
